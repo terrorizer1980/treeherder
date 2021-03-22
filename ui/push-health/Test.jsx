@@ -372,7 +372,11 @@ Test.propTypes = {
   groupedBy: PropTypes.string.isRequired,
   revision: PropTypes.string.isRequired,
   currentRepo: PropTypes.shape({}).isRequired,
-  notify: PropTypes.func.isRequired,
+  notify: PropTypes.func,
+};
+
+Test.defaultProps = {
+  notify: () => {},
 };
 
 export default Test;
