@@ -88,7 +88,7 @@ class PushViewSet(viewsets.ViewSet):
             .select_related('job', 'job_type')
             .values_list('job_logs__job__job_type__name', flat=True)
         )
-        print(group_regression_labels)
+
         likely_regression_labels.extend(list(group_regression_labels))
 
         tests = get_test_failures(push, jobs, likely_regression_labels)
