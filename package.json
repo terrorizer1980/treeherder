@@ -19,7 +19,7 @@
     "@neutrinojs/copy": "9.2.0",
     "@neutrinojs/react": "9.2.0",
     "@types/prop-types": "*",
-    "@types/react": "*",
+    "@types/react": "16.14.8",
     "@types/react-dom": "*",
     "ajv": "6.12.6",
     "auth0-js": "9.13.4",
