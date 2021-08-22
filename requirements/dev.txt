@@ -113,7 +113,7 @@ distlib==0.3.1 \
     --hash=sha256:8c09de2c67b3e7deef7184574fc060ab8a793e7adbb183d942c389c8b13c52fb \
     --hash=sha256:edf6116872c863e1aa9d5bb7cb5e05a022c519a4594dc703843343a9ddd9bff1
     # via virtualenv
-django-debug-toolbar==3.2 \
+django-debug-toolbar==3.2.1 \
     --hash=sha256:84e2607d900dbd571df0a2acf380b47c088efb787dce9805aefeb407341961d2 \
     --hash=sha256:9e5a25d0c965f7e686f6a8ba23613ca9ca30184daa26487706d4829f5cfb697a
     # via -r requirements/dev.in
@@ -121,7 +121,7 @@ django-extensions==3.1.1 \
     --hash=sha256:674ad4c3b1587a884881824f40212d51829e662e52f85b012cd83d83fe1271d9 \
     --hash=sha256:9507f8761ee760748938fd8af766d0608fb2738cf368adfa1b2451f61c15ae35
     # via -r requirements/dev.in
-django==3.1.4 \
+django==3.1.6 \
     --hash=sha256:5c866205f15e7a7123f1eec6ab939d22d5bde1416635cab259684af66d8e48a2 \
     --hash=sha256:edb10b5c45e7e9c0fb1dc00b76ec7449aca258a39ffd613dbd078c51d19c9f03
     # via
