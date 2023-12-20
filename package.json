@@ -22,7 +22,7 @@
     "@types/react": "*",
     "@types/react-dom": "*",
     "ajv": "6.12.6",
-    "auth0-js": "9.13.4",
+    "auth0-js": "9.20.2",
     "connected-react-router": "6.8.0",
     "fuse.js": "6.0.4",
     "history": "4.10.1",
@@ -61,8 +61,8 @@
     "taskcluster-lib-scopes": "10.0.2",
     "taskcluster-lib-urls": "13.0.1",
     "victory": "35.0.9",
-    "webpack": "4.41.6",
-    "webpack-cli": "3.3.12"
+    "webpack": "5.0.0",
+    "webpack-cli": "4.0.0"
   },
   "devDependencies": {
     "@neutrinojs/eslint": "9.2.0",
