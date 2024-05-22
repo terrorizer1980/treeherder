@@ -4,7 +4,7 @@
 #
 #    pip-compile --generate-hashes --output-file=requirements/common.txt requirements/common.in
 #
-aiohttp==3.7.4.post0 \
+aiohttp==3.9.4 \
     --hash=sha256:02f46fc0e3c5ac58b80d4d56eb0a7c7d97fcef69ace9326289fb9f1955e65cfe \
     --hash=sha256:0563c1b3826945eecd62186f3f5c7d31abb7391fedc893b7e2b26303b5a9f3fe \
     --hash=sha256:114b281e4d68302a324dd33abb04778e8557d88947875cbf4e842c2c01a030c5 \
@@ -128,7 +128,7 @@ celery==4.4.2 \
     --hash=sha256:108a0bf9018a871620936c33a3ee9f6336a89f8ef0a0f567a9001f4aa361415f \
     --hash=sha256:5b4b37e276033fe47575107a2775469f0b721646a08c96ec2c61531e4fe45f2a
     # via -r requirements/common.in
-certifi==2020.12.5 \
+certifi==2023.7.22 \
     --hash=sha256:1a4995114262bffbc2413b159f2a1a480c969de6e6eb13ee966d470af86af59c \
     --hash=sha256:719a74fb9e33b9bd44cc7f3a8d94bc35e4049deebe19ba7d8e108280cfd59830
     # via requests
@@ -166,7 +166,7 @@ django-redis==4.12.1 \
     --hash=sha256:1133b26b75baa3664164c3f44b9d5d133d1b8de45d94d79f38d1adc5b1d502e5 \
     --hash=sha256:306589c7021e6468b2656edc89f62b8ba67e8d5a1c8877e2688042263daa7a63
     # via -r requirements/common.in
-django==3.1.4 \
+django==3.2.25 \
     --hash=sha256:5c866205f15e7a7123f1eec6ab939d22d5bde1416635cab259684af66d8e48a2 \
     --hash=sha256:edb10b5c45e7e9c0fb1dc00b76ec7449aca258a39ffd613dbd078c51d19c9f03
     # via
@@ -199,11 +199,11 @@ furl==2.1.0 \
     --hash=sha256:c0e0231a1feee2acd256574b7033df3144775451c610cb587060d6a0d7e0b621 \
     --hash=sha256:f4d6f1e5479c376a5b7bdc62795d736d8c1b2a754f366a2ad2816e46e946e22e
     # via -r requirements/common.in
-gunicorn==20.0.4 \
+gunicorn==22.0.0 \
     --hash=sha256:1904bb2b8a43658807108d59c3f3d56c2b6121a701161de0ddf9ad140073c626 \
     --hash=sha256:cd4a810dd51bf497552cf3f863b575dabd73d6ad6a91075b65936b151cbf4f9c
     # via -r requirements/common.in
-idna==2.10 \
+idna==3.7 \
     --hash=sha256:b307872f855b18632ce0c21c5e45be78c0ea7ae4c15c828c20788b26921eb3f6 \
     --hash=sha256:b97d804b1e9b523befed77c48dacec60e6dcb0b5391d57af6a65a312a90648c0
     # via
@@ -486,13 +486,13 @@ pyyaml==5.4.1 \
     # via
     #   -r requirements/common.in
     #   mozci
-redis==3.5.3 \
+redis==4.3.6 \
     --hash=sha256:0e7e0cfca8660dea8b7d5cd8c4f6c5e29e11f31158c0b0ae91a397f00e5a05a2 \
     --hash=sha256:432b788c4530cfe16d8d943a09d40ca6c16149727e4afe8c2c9d5580c59d9f24
     # via
     #   django-redis
     #   mozci
-requests==2.25.1 \
+requests==2.32.0 \
     --hash=sha256:27973dd4a904a4f13b263a19c866c13b92a39ed1c964655f025f3f8d3d75b804 \
     --hash=sha256:c210084e36a42ae6b9219e00e48287def368a26d03a048ddad7bfee44f75871e
     # via
@@ -574,7 +574,7 @@ slugid==2.0.0 \
     --hash=sha256:a950d98b72691178bdd4d6c52743c4a2aa039207cf7a97d71060a111ff9ba297 \
     --hash=sha256:aec8b0e01c4ad32e38e12d609eab3ec912fd129aaf6b2ded0199b56a5f8fd67c
     # via taskcluster
-sqlparse==0.4.1 \
+sqlparse==0.5.0 \
     --hash=sha256:017cde379adbd6a1f15a61873f43e8274179378e95ef3fede90b5aa64d304ed0 \
     --hash=sha256:0f91fd2e829c44362cbcfab3e9ae12e22badaa8a29ad5ff599f9ec109f0454e8
     # via django
@@ -605,7 +605,7 @@ uritemplate==3.0.1 \
     --hash=sha256:07620c3f3f8eed1f12600845892b0e036a2420acf513c53f7de0abd911a5894f \
     --hash=sha256:5af8ad10cec94f215e3f48112de2022e1d5a37ed427fbd88652fa908f2ab7cae
     # via coreapi
-urllib3==1.26.4 \
+urllib3==1.26.18 \
     --hash=sha256:2f4da4594db7e1e110a944bb1b551fdf4e6c136ad42e4234131391e21eb5b0df \
     --hash=sha256:e7b021f7241115872f92f43c6508082facffbd1c048e3c6e2bb9c2a157e28937
     # via
@@ -722,3 +722,4 @@ zstandard==0.15.2 \
 # WARNING: The following packages were not pinned, but pip requires them to be
 # pinned when the requirements file includes hashes. Consider using the --allow-unsafe flag.
 # setuptools
+setuptools>=65.5.1 # not directly required, pinned by Snyk to avoid a vulnerability
