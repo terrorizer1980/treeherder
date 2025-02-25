@@ -440,7 +440,7 @@ python-dateutil==2.8.1 \
     # via
     #   -r requirements/common.in
     #   botocore
-python-jose[pycryptodome]==3.2.0 \
+python-jose==3.4.0 \
     --hash=sha256:4e4192402e100b5fb09de5a8ea6bcc39c36ad4526341c123d401e2561720335b \
     --hash=sha256:67d7dfff599df676b04a996520d9be90d6cdb7e6dd10b4c7cacc0c3e2e92f2be
     # via -r requirements/common.in
